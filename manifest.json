@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DBD Wiki Redirector",
+  "version": "1.0",
+  "description": "Redirects Dead by Daylight Fandom wiki links to wiki.gg links instead",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://deadbydaylight.fandom.com/*"
+  ],
+  "action": {
+    "default_title": "DBD Redirector Active"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "redirect_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

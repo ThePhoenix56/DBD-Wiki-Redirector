@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://deadbydaylight.wiki.gg/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://deadbydaylight\\.fandom\\.com/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
